@@ -27,7 +27,7 @@ public class Count {
     }
 
     public static void lookUpTable(int n){
-        int res = table[n & 0xFF];//0xFF is hexadecimal representation of 8 set bits i.e 255
+        int res = table[n & 0xFF];//0xFF is hexadecimal representation of 8 set bits
         n = n>>8;
         res = res + table[n & 0xFF];
         n = n>>8;
